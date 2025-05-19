@@ -1,0 +1,10 @@
+{
+  "name": "popmart",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "packageName": "cn.m9d2.popmart",
+  "main": "main.js",
+  "launchConfig": {
+    "hideLogs": false
+  }
+}
