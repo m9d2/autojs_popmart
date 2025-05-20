@@ -31,7 +31,13 @@ function detect() {
         findPartialText: function (text) {
             var result = results.find(o => o.label.includes(text))
             // log(text, result)
+            log(result)
             return result ? wrapOCRResult(result) : null;
+        },
+        findPartialTextLastOne: function (text) {
+            var result = results.filter(o => o.label.includes(text))
+            log(result)
+            return result ? wrapOCRResult(result.at(-1)) : null;
         },
         findTextCache: function (text) {
             var result = null;
